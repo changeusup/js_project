@@ -1,0 +1,82 @@
+body {
+	color: #fff;
+}
+
+@font-face {
+    font-family: 'netmarbleB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.choice-container {
+	display: flex;
+	margin-bottom: 0.8rem;
+	width: 100%;
+	border-radius: 4px;
+	background: turquoise;
+	font-size: 3rem;
+	min-width: 80rem;
+}
+
+.choice-container:hover {
+	cursor: pointer;
+	box-shadow: 0 0.4rem 1.4rem 0 blue;
+	transform: scale(1.02);
+	transform: transform 100ms;
+}
+
+.choice-prefix {
+	padding: 2rem 2.5rem;
+	color: midnightblue;
+}
+
+.choice-text {
+	padding: 2rem;
+	width: 100%;
+	color: midnightblue;
+}
+
+.correct {
+	background: green;
+}
+
+.incorrect {
+	background: red;
+}
+
+/* 헤드 업 */
+#hud {
+	display: flex;
+	justify-content: space-between;
+}
+
+.hud-prefix {
+	text-align: center;
+	font-size: 2rem;
+}
+
+.hud-main-text {
+	text-align: center;
+}
+
+#progressBar {
+	width: 20rem;
+	height: 3rem;
+	border: 0.2rem solid green;
+	margin-top: 2rem;
+	border-radius: 50px;
+	overflow: hidden;
+}
+
+#progressBarFull {
+	height: 100%;
+	background: green;
+	width: 0%;
+}
+
+@media screen and (max-width:  768px) {
+	.choice-container {
+		min-width: 40rem;
+	}
+}
